@@ -115,6 +115,9 @@ Now we have the best transformation $A$ containing rotation and scaling.
 
 Refer to the literature 3 and [my blog](https://zhuanlan.zhihu.com/p/397600286), we know the singular values of $A$ are the magnitudes of stretch and the right-singular vectors are the stretch directions.
 
+## Degenerate Condition: $r_i r_i^T$ is a zero matrix
+If $r_i r_i^T$ is a zero matrix, the cluster is just a point. So of course there is no deformation.
+
 
 ## 参考文献
 1. 2005 Meshless Deformations Based on Shape Matching
