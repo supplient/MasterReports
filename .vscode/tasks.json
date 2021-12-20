@@ -3,17 +3,23 @@
 	// for the documentation about the tasks.json format
 	"version": "2.0.0",
 	"tasks": [
-		{
-			"label": "Preview: Serve Local Server",
-			"type": "shell",
-			"command": "docsify serve .",
-			"problemMatcher": []
-		},
+        {
+            "label": "Start Server",
+            "type": "shell",
+            "command": "python ${workspaceFolder}\\local_server.py ${workspaceFolder} --addr 127.0.0.1 -p 8080",
+            "problemMatcher": []
+        },
 		{
             "label": "Generate Index",
             "type": "shell",
-            "command": "python generate_index.py",
+            "command": "python generate_html_index.py",
             "problemMatcher": []
         },
+        {
+            "label": "Open Chrome",
+            "type": "shell",
+            "command": "d:\\softwares\\chrome.lnk --remote-debugging-port=9222 --user-data-dir=D:/temp/chrome_debug --new-window 127.0.0.1:8080",
+            "problemMatcher": []
+        }
 	]
 }

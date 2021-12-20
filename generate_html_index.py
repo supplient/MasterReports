@@ -13,7 +13,7 @@ def getTree(path):
                 tree.append((file, sub_tree))
         else:
             filename, ext = os.path.splitext(file)
-            if ext == ".md":
+            if ext == ".html":
                 tree.append((file, None))
 
     return tree
@@ -34,7 +34,7 @@ def logTree(tree, logger, level=1, path=""):
 if __name__ == "__main__":
     logger = logging.getLogger("logger")
     logger.setLevel(logging.DEBUG)
-    fh = logging.FileHandler("README.md", mode="w", encoding="utf-8")
+    fh = logging.FileHandler("index.md", mode="w")
     fh.setLevel(logging.DEBUG)
     formatter = logging.Formatter("%(message)s")
     fh.setFormatter(formatter)
