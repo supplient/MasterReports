@@ -127,7 +127,7 @@ ParticleBelongList的维护是在Insert/Delete Cluster时进行的，需要注�
 需要注意的是哈希集合的实现，因为没有现成的轮子，所以我是自己写了一个lock-free的hashset。它有两点要注意：
 * device端的内存由host端调用CUDA API分配，一直都驻留(reside)在device端，并不会来回拷贝。虽然数据的内存由host端分配，但几乎所有的操作都是device函数。
   * TODO：这部分我应该写个博客，记录一下这种GPU数据结构的设计范式
-* lock-free并不意味着cost-free，仅仅只是用原子操作来替代了显式原子锁而已（CUDA中应尽量避免使用显式锁，详情参见[我的博客]（https://zhuanlan.zhihu.com/p/418985780）），多线程Insert依然会产生同步开销，所以是个昂贵的操作。
+* lock-free并不意味着cost-free，仅仅只是用原子操作来替代了显式原子锁而已（CUDA中应尽量避免使用显式锁，详情参见[我的博客](https://zhuanlan.zhihu.com/p/418985780)），多线程Insert依然会产生同步开销，所以是个昂贵的操作。
 
 其他部分直接看代码吧。
 
