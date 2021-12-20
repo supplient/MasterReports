@@ -34,7 +34,7 @@ def logTree(tree, logger, level=1, path=""):
 if __name__ == "__main__":
     logger = logging.getLogger("logger")
     logger.setLevel(logging.DEBUG)
-    fh = logging.FileHandler("README.md", mode="w")
+    fh = logging.FileHandler("README.md", mode="w", encoding="utf8")
     fh.setLevel(logging.DEBUG)
     formatter = logging.Formatter("%(message)s")
     fh.setFormatter(formatter)

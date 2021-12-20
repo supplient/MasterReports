@@ -1,12 +1,12 @@
-# ContactCut̽��
-[�����α�̶ȵ��ƻ����.html](ContactCut̽��\�����α�̶ȵ��ƻ����.html)
+# ContactCut探索
+[基于形变程度的破坏检测.html](ContactCut探索\基于形变程度的破坏检测.html)
 
-# С�������ݵ�����
-[�������ݵ�����.html](С�������ݵ�����\�������ݵ�����.html)
+# 小论文内容的问题
+[关于内容的问题.html](小论文内容的问题\关于内容的问题.html)
 
-# �´��ع�̽��
-[�´ػ����㷨.html](�´��ع�̽��\�´ػ����㷨.html)
+# 新簇重构探索
+[新簇划分算法.html](新簇重构探索\新簇划分算法.html)
 
-# �ڶ��β��л��׶��ܽ�
-[Workflow.html](�ڶ��β��л��׶��ܽ�\Workflow.html)
+# 第二次并行化阶段总结
+[Workflow.html](第二次并行化阶段总结\Workflow.html)
 
